@@ -1,0 +1,21 @@
+name: flutter_agentify_lints
+description: Analyzer rules that keep a Flutter Agentify app's architecture correct.
+homepage: https://github.com/aazirani/flutter_agentify
+repository: https://github.com/aazirani/flutter_agentify/tree/main/packages/flutter_agentify_lints
+issue_tracker: https://github.com/aazirani/flutter_agentify/issues
+topics:
+  - lints
+  - analyzer
+  - static-analysis
+  - clean-architecture
+  - linter
+publish_to: none
+environment:
+  sdk: ^3.13.0
+dependencies:
+  analysis_server_plugin: ^0.3.19
+  analyzer: ^14.0.0
+dev_dependencies:
+  analyzer_testing: ^0.4.0
+  test: ^1.25.0
+  test_reflective_loader: ^0.6.0

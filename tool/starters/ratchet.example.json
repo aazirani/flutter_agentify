@@ -1,0 +1,6 @@
+{
+  "scope": "app",
+  "ignore_comments": 0,
+  "null_assertions": 8,
+  "dynamic": 1
+}

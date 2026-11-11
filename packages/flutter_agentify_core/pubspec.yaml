@@ -1,0 +1,21 @@
+name: flutter_agentify_core
+description: Actions, agent loop and tooling that make a Dart or Flutter app AI-ready.
+homepage: https://github.com/aazirani/flutter_agentify
+repository: https://github.com/aazirani/flutter_agentify/tree/main/packages/flutter_agentify_core
+issue_tracker: https://github.com/aazirani/flutter_agentify/issues
+topics:
+  - ai
+  - llm
+  - agent
+  - tool-calling
+  - ollama
+publish_to: none
+environment:
+  sdk: ^3.13.0
+dependencies:
+  args: ^2.7.0
+  http: ^1.6.0
+  path: ^1.9.1
+  yaml: ^3.1.4
+dev_dependencies:
+  test: ^1.25.0

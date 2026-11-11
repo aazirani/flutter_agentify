@@ -1,0 +1,19 @@
+# This package has its own options so the app's plugin settings in the root
+# analysis_options.yaml do not apply to it.
+analyzer:
+  errors:
+    # shortcut: Flutter 3.50 deprecates package:flutter/material.dart for
+    # package:material_ui, a separate copy most packages have not moved to;
+    # mixing the two splits Theme lookups. Remove once go_router and the
+    # other dependencies use material_ui.
+    deprecated_member_use: ignore
+  exclude:
+    - build/**
+linter:
+  rules:
+    prefer_single_quotes: true
+    prefer_const_declarations: true
+    avoid_print: true
+    always_declare_return_types: true
+    prefer_final_locals: true
+    prefer_final_in_for_each: true

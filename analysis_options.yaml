@@ -1,0 +1,55 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    prefer_single_quotes: true
+    prefer_const_constructors: true
+    prefer_const_literals_to_create_immutables: true
+    prefer_const_declarations: true
+    avoid_print: true
+    always_declare_return_types: true
+    prefer_final_locals: true
+    prefer_final_in_for_each: true
+    use_key_in_widget_constructors: true
+    avoid_unnecessary_containers: true
+    use_decorated_box: true
+
+analyzer:
+  errors:
+    library_private_types_in_public_api: ignore
+    # shortcut: Flutter 3.50 deprecates package:flutter/material.dart for
+    # package:material_ui, a separate copy most packages have not moved to;
+    # mixing the two splits Theme lookups. Remove once go_router and the
+    # other dependencies use material_ui.
+    deprecated_member_use: ignore
+  exclude:
+    - '**/*.g.dart'
+    - '**/*.drift.dart'
+    - '**/*.freezed.dart'
+    - test/generated_migrations/**
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
+    - .agents/**
+    # @template:begin
+    # The empty starter's files; checked in a project made from them.
+    - tool/starters/**
+    # @template:end
+
+plugins:
+  flutter_agentify_lints:
+    path: packages/flutter_agentify_lints
+    diagnostics:
+      domain_layer_boundaries: true
+      no_error_returns_in_actions: true
+      no_hardcoded_colors: true
+      no_hardcoded_strings: true
+      no_navigator_push: true
+      no_raw_sql_interpolation: true
+      no_secret_literals: true
+      presentation_layer_boundaries: true
+      ui_calls_actions: true

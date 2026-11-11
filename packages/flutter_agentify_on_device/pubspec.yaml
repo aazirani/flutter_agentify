@@ -1,0 +1,27 @@
+name: flutter_agentify_on_device
+description: Runs the Flutter Agentify assistant on a model inside the app (Gemma 4 E2B on LiteRT-LM), no server and no key.
+homepage: https://github.com/aazirani/flutter_agentify
+repository: https://github.com/aazirani/flutter_agentify/tree/main/packages/flutter_agentify_on_device
+issue_tracker: https://github.com/aazirani/flutter_agentify/issues
+topics:
+  - ai
+  - llm
+  - on-device
+  - gemma
+  - offline
+publish_to: none
+environment:
+  sdk: ^3.13.0
+  flutter: ">=3.47.0"
+dependencies:
+  device_info_plus: ^13.3.0
+  flutter:
+    sdk: flutter
+  flutter_agentify_core:
+    path: ../flutter_agentify_core
+  # Exact pins: an engine change reaches apps only through a framework release.
+  flutter_edge_ai: 2.6.0
+  flutter_edge_ai_litertlm: 1.20.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

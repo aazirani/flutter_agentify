@@ -1,0 +1,71 @@
+{
+  "move": [
+    "lib/data/local/database/daos/example_dao.dart",
+    "lib/data/local/database/tables/example_table.dart",
+    "lib/data/repositories/drift_items_repository.dart",
+    "lib/domain/actions/items_actions.dart",
+    "lib/domain/entities/item.dart",
+    "lib/domain/repositories/items_repository.dart",
+    "lib/presentation/home/home_screen.dart",
+    "lib/presentation/providers/items_provider.dart",
+    "test/actions/create_item_test.dart",
+    "test/actions/delete_item_test.dart",
+    "test/actions/delete_items_test.dart",
+    "test/actions/get_item_test.dart",
+    "test/actions/list_items_test.dart",
+    "test/actions/update_item_test.dart",
+    "test/ai/assistant_items_flow_test.dart",
+    "test/ai/home_screen_context_test.dart",
+    "test/tool/action_cli_items_test.dart",
+    "test/data/repositories/drift_items_repository_test.dart",
+    "integration_test/on_device_measure_test.dart",
+    "test/presentation/home/home_screen_test.dart",
+    "test/presentation/providers/items_provider_test.dart",
+    "test/support/fakes.dart",
+    "test/generated_migrations/",
+    "drift_schemas/"
+  ],
+  "removeTranslationKeys": [
+    "add_item",
+    "item_title",
+    "item_description",
+    "enter_title",
+    "enter_description",
+    "cancel",
+    "delete",
+    "delete_named",
+    "edit",
+    "confirm_delete",
+    "no_items",
+    "selected_count",
+    "clear_selection",
+    "empty_items_hint",
+    "action_list_items",
+    "action_get_item",
+    "action_create_item",
+    "action_update_item",
+    "action_delete_item",
+    "receipt_created_item",
+    "receipt_updated_item",
+    "receipt_deleted_item",
+    "edit_named",
+    "delete_selected",
+    "confirm_delete_selected",
+    "action_delete_items",
+    "receipt_renamed_item",
+    "receipt_changed_item_description",
+    "receipt_cleared_item_description",
+    "receipt_deleted_items",
+    "receipt_deleted_items_partial"
+  ],
+  "addTranslations": {
+    "en": {
+      "home_intro": "This is your app's first screen. Open the assistant to try it, or change the theme and the language in Settings.",
+      "welcome": "Welcome"
+    },
+    "fa": {
+      "home_intro": "این اولین صفحهٔ برنامهٔ شماست. دستیار را باز کنید تا آن را امتحان کنید، یا پوسته و زبان را در تنظیمات تغییر دهید.",
+      "welcome": "خوش آمدید"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+tags:
+  # Runs tool/action.dart in its own process, so it is slower.
+  cli:
+  # Copies the template and runs tool/setup.dart on the copy; takes minutes.
+  template:

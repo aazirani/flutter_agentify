@@ -1,0 +1,23 @@
+name: flutter_agentify_ui
+description: Material 3 chat for the Flutter Agentify assistant, with approval cards and change receipts.
+homepage: https://github.com/aazirani/flutter_agentify
+repository: https://github.com/aazirani/flutter_agentify/tree/main/packages/flutter_agentify_ui
+issue_tracker: https://github.com/aazirani/flutter_agentify/issues
+topics:
+  - ai
+  - chat
+  - llm
+  - agent
+  - widget
+publish_to: none
+environment:
+  sdk: ^3.13.0
+  flutter: ">=3.47.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_agentify_core:
+    path: ../flutter_agentify_core
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

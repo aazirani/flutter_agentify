@@ -1,0 +1,75 @@
+name: flutter_agentify
+description: A Flutter app template built to be developed with AI coding agents, with an in-app assistant that shares the app's actions.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.0
+  flutter: ">=3.47.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Assistant framework
+  flutter_agentify_core:
+    path: packages/flutter_agentify_core
+  flutter_agentify_ui:
+    path: packages/flutter_agentify_ui
+  # @on-device:begin
+  flutter_agentify_on_device:
+    path: packages/flutter_agentify_on_device
+  # @on-device:end
+  flutter_secure_storage: ^11.2.0
+
+  # State management
+  flutter_riverpod: ^3.5.0
+  riverpod_annotation: ^4.0.8
+
+  # Routing
+  go_router: ^18.1.3
+
+  # Dependency injection
+  get_it: ^9.2.0
+
+  # Local database
+  drift: ^2.26.0
+  drift_flutter: ^0.3.1
+
+  # Storage
+  shared_preferences: ^2.5.2
+
+  # Utilities
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # @on-device:begin
+  integration_test:
+    sdk: flutter
+  # @on-device:end
+  flutter_lints: ^6.0.0
+
+  # Code generation
+  build_runner: ^2.4.15
+  riverpod_generator: ^4.0.10
+  drift_dev: ^2.26.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/assistant/
+    - assets/fonts/
+    - assets/lang/
+
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter[opsz,wght].ttf
+    - family: Vazirmatn
+      fonts:
+        - asset: assets/fonts/Vazirmatn[wght].ttf
